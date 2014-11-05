@@ -101,5 +101,5 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/nginx
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD upstream.conf /etc/nginx/conf/upstream.conf
 
-EXPOSE 80, 8081,443
+EXPOSE 80 8081 443
 CMD ["/usr/sbin/nginx"]
